@@ -2,6 +2,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/025c360bbaaccc37cdd5/maintainability)](https://codeclimate.com/github/propero-oss/action-history/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/025c360bbaaccc37cdd5/test_coverage)](https://codeclimate.com/github/propero-oss/action-history/test_coverage)
+[![Build Status](https://app.travis-ci.com/propero-oss/action-history.svg?branch=master)](https://app.travis-ci.com/propero-oss/action-history)
 
 ```shell
 npm i @propero/action-history
