@@ -1,7 +1,7 @@
 # Action History
 
-[![Maintainability](---)](https://codeclimate.com/github/propero-oss/action-history/maintainability)
-[![Test Coverage](---)](https://codeclimate.com/github/propero-oss/action-history/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/025c360bbaaccc37cdd5/maintainability)](https://codeclimate.com/github/propero-oss/action-history/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/025c360bbaaccc37cdd5/test_coverage)](https://codeclimate.com/github/propero-oss/action-history/test_coverage)
 
 ```shell
 npm i @propero/action-history
