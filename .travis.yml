@@ -1,6 +1,16 @@
 os: linux
 language: node_js
-cache: npm
+cache:
+  npm: false
+  directories:
+    - "~/.pnpm-store"
+
+before_install:
+  - curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm@6
+  - pnpm config set store-dir ~/.pnpm-store
+
+install:
+  - pnpm install
 
 jobs:
   include:
@@ -11,13 +21,13 @@ jobs:
         - chmod +x ./cc-test-reporter
         - ./cc-test-reporter before-build
       script:
-        - npm run build
-        - npm run lint
-        - npm run test
+        - pnpm run build
+        - pnpm run lint
+        - pnpm run test
       after_script:
         - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
       deploy:
         provider: script
         cleanup: false
         skip_cleanup: true
-        script: npx semantic-release
+        script: pnpx semantic-release
